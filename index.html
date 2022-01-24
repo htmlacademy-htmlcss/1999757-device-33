@@ -5,27 +5,27 @@
     <title>Интернет-магазин "Девайс"</title>
   </head>
   <body>
-    <header class="page-header">
-      <a href="https://htmlacademy.ru/" class="logo">
-<img src="logo/logo.png" alt="Логотип Интернет-магазина Девайс class="logo">
-      </a>
+  <header class="page-header">
+
+  <nav class="navigation">
+
+    <a href="https://htmlacademy.ru/" class= "logo">
+<img src="logo/logo.png" alt="Логотип Интернет-магазина Девайс" class="logo">
+    </a>
 
      <form class="search" action="#">
-<input type="text" name="search" placeholder="Текст поиска" id="search">
-<input type="submit" value="Найти">
+        <input type="text" name="search" placeholder="Текст поиска" id="search">
+        <button type="submit" value="Найти">
+          Найти
+        </button>
      </form>
 
-    <nav class="navigation">
-
-<ul class="navigation navigation-login">
+<ul class="navigation navigation-user">
   <li class="navigation-item">
     <a href="#" class="navigation-link">
 Войти
     </a>
   </li>
-</ul>
-
-<ul class="navigation navigation-user">
   <li class="navigation-item">
     <a href="#" class="navigation-link">
       Сравнить
@@ -38,15 +38,50 @@
   </li>
 </ul>
 
-<ul class="navigation navigation-catalog">
-  <li class="navigation-item">
+<ul class="navigation navigation-list">
+
+<li class="navigation-item">
     <a href="catalog.html" class="navigation-link">
 Каталог товаров
     </a>
-  </li>
-</ul>
 
-<ul class="navigation navigation-list">
+  <ul class="nested-navigation navigation-list">
+
+    <li class="products-item">
+      <a href="#">
+        Виртуальная
+      реальность
+      </a>
+      </li>
+      <li class="products-item">
+        <a href="#">
+          Моноподы
+          для селфи
+        </a>
+        </li>
+        <li class="products-item">
+          <a href="#">
+            Экшн-камеры
+          </a>
+          </li>
+          <li class="products-item">
+            <a href="#">
+              Фитнес-браслеты
+            </a>
+            </li>
+            <li class="products-item">
+              <a href="#">
+                Умные часы
+              </a>
+              </li>
+              <li class="products-item">
+                <a href="#">
+                  Квадрокоптеры
+                </a>
+              </li>
+  </ul>
+  </li>
+
 <li class="navigation-item">
 <a href="#" class="navigation-link">
 Доставка
@@ -73,12 +108,20 @@
 <h1 class="visually-hidden">
   Интернет-магазин "Девайс"
 </h1>
-<section class="main-banner">
+
+<section class="main-slider">
 <h2 class="visually-hidden">
 Баннер-слайдер
 </h2>
-<img src="img/slider-1.png" alt="квадрокоптер" class="quadrocopter
-">
+
+<img src="img/slider-1.png" alt="квадрокоптер" class="slider-quadrocopter">
+<button class="slider-button slider-previous" type="button">
+  <span class="visually-hidden">Предыдущее фото</span>
+</button>
+
+<button class="slider-button slider-next" type="button">
+  <span class="visually-hidden">Следующее фото</span>
+</button>
 <p>
   Порхает как бабочка,
 жалит как пчела!
@@ -86,6 +129,24 @@
 <p>
   Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
 </p>
+<ol class="slider-pagination">
+  <li class="slider-pagination-item">
+    <button class="slider-pagination-button" type="button">
+      <span class="visually-hidden">1 слайд</span>
+    </button>
+  </li>
+  <li class="slider-pagination-item">
+    <button class="slider-pagination-button" type="button">
+      <span class="visually-hidden">2 слайд</span>
+    </button>
+  </li>
+  <li class="slider-pagination-item">
+    <button class="slider-pagination-button" type="button">
+      <span class="visually-hidden">3 слайд</span>
+    </button>
+  </li>
+</ol>
+
 <a href="#" class="details">
 Подробнее
 </a>
@@ -145,7 +206,7 @@
           <a href="#">
             Квадрокоптеры
           </a>
-          </li>
+        </li>
   </ul>
 </section>
 
@@ -174,13 +235,27 @@
 к вашему подъезду совершенно бесплатно! Ведь
 мы неплохо заработаем, поднимая его на ваш этаж.
 </p>
+<h2 class="delivery-title visually-hidden">
+Гаратия
+</h2>
+<p>
+  Если из-за возгорания купленного у нас товара у вас
+сгорит дом — не переживайте, мы выдадим вам новый.
+Товар, не дом, конечно же.
+</p>
+<h2 class="delivery-title visually-hidden">
+Кредит
+</h2>
+<p>
+  Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.
+</p>
 </section>
 
 <section class="button">
   <h3 class="visually-hidden">
 Кнопка доставки редкого товара
   </h3>
-   <button form="#" name="button-delivery" type="button">
+  <button name="button-delivery" type="button" value="Доставим редкий товар под заказ">
     Доставим редкий товар под заказ
   </button>
 </section>
@@ -210,7 +285,7 @@
         <a href="#" class="About-us-link">
           ТоксБерри
         </a>
-          </li>
+      </li>
 </ul>
   <a href="#" class="About-us-link">
     Подробнее о нас
@@ -234,7 +309,7 @@
 </p>
 <a class="contacts-phone" href="tel:78128121212">+7 (812) 812-12-12</a>
 </address>
-<h3 clas="contacts-subtitle">
+<h3 class="contacts-subtitle">
   Время работы
 </h3>
 <ul class="contacts-schedule">
@@ -247,27 +322,28 @@
 </section>
 
 <section class="newsletter">
-<h2 class="newsletter-title">
+ <h2 class="newsletter-title">
   Подпишитесь
 на рассылку
-</h2>
-<p>
+ </h2>
+  <p>
 Еженедельный дайджест с обзорами новинок,
 длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
-</p>
+ </p>
 <form action="#" method="post" class="newsletter-form">
 <input type="email" name="email" placeholder="Ваш e-mail">
 <button type="submit" class="button-newsletter">
   Подписаться
 </button>
-</form>
 <p>
   Это бесплатно
 </p>
+</form>
 </section>
 </main>
+
 <footer class="page-footer">
-  <section class="class="footer-contacts">
+  <section class="footer-contacts">
     <h2 class="visually-hidden">
       Контакты
     </h2>
@@ -293,20 +369,20 @@
         <a href="#" class="footer-navigation-link">
         Гарантия
         </a>
-        </li>
+      </li>
 
-        <li class="footer-navigation-item">
-          <a href="#" class="footer-navigation-link">
+      <li class="footer-navigation-item">
+        <a href="#" class="footer-navigation-link">
           Контакты
-          </a>
-          </li>
-      </ul>
+        </a>
+      </li>
+    </ul>
   </section>
 
   <section class="footer-phone-number">
     <address class="footer-phone-address">
       Тел.: <a class="footer-phone-link" href="tel:78128121212">+7 (812) 812-12-12</a>
-      </address>
+    </address>
   </section>
 
   <section class="footer-social">
@@ -326,8 +402,9 @@
           <span class="visually-hidden">Twitter</span>
         </a>
       </li>
-      <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-<img src="img/htmlacademy.png" alt="html academy">
+    </ul>
+    <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+      <img src="img/htmlacademy.png" alt="html academy">
       </a>
   </section>
 </footer>
