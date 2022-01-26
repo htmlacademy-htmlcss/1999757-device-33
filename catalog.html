@@ -12,7 +12,7 @@
     <nav class="navigation">
 
       <a href="index.html" class="logo">
-        <img src="logo/logo.png" alt="Логотип Интернет-магазина Девайс" class="logo">
+        <img src="logo/logo.svg" alt="Логотип Интернет-магазина Девайс" class="logo">
       </a>
 
       <form class="search" action="#">
@@ -111,19 +111,19 @@
       <h1 class="inner-header-title">
         Моноподы для селфи
       </h1>
-      <ul class="location-list">
-        <li class="location-item">
-          <a class="location-link" href="index.html">
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="index.html">
             Главная
           </a>
         </li>
-        <li class="location-item">
-          <a class="location-link" href="catalog.html">
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="catalog.html">
             Каталог товаров
           </a>
         </li>
-        <li class="location-item">
-          <a class="location-link">
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link">
             Моноподы для селфи
           </a>
         </li>
@@ -213,26 +213,31 @@
         </button>
       </form>
 
-<h2>
-  Сортировка
-</h2>
+      <h2>
+        Сортировка
+      </h2>
       <select class="select-control">
-          <option value="popular">Популярные</option>
-          <option value="cheap">Самые дешевые</option>
-          <option value="dear">Самые дорогие</option>
+        <option value="popular">Популярные</option>
+        <option value="cheap">Самые дешевые</option>
+        <option value="dear">Самые дорогие</option>
       </select>
 
-      <button class="catalog-control catalog-up" type="button">
-        <span class="visually-hidden">
-          Вверх
-        </span>
-      </button>
-
-      <button class="catalog-control catalog-down" type="button">
-        <span class="visually-hidden">
-          Вниз
-        </span>
-      </button>
+      <ul class="catalog-control-list">
+        <li class="catalog-control-item">
+          <a class="catalog-control-link" href="#">
+            <span class="visually-hidden">
+              Вверх
+            </span>
+          </a>
+        </li>
+        <li class="catalog-control-item">
+          <a class="catalog-control catalog-link" href="#">
+            <span class="visually-hidden">
+              Вниз
+            </span>
+          </a>
+        </li>
+      </ul>
 
       <ul class="product-card-list">
         <li class="product-card-item">
@@ -247,6 +252,9 @@
           <b class="product-card-price">
             500 ₽
           </b>
+          <a href="#" class="details">
+            Подробнее
+          </a>
         </li>
 
         <li class="product-card-item">
@@ -259,6 +267,9 @@
           <b class="product-card-price">
             1 500 ₽
           </b>
+          <a href="#" class="details">
+            Подробнее
+          </a>
         </li>
 
         <li class="product-card-item">
@@ -272,6 +283,9 @@
           <b class="product-card-price">
             2 500 ₽
           </b>
+          <a href="#" class="details">
+            Подробнее
+          </a>
         </li>
 
         <li class="product-card-item">
@@ -284,6 +298,9 @@
           <b class="product-card-price">
             1 500 ₽
           </b>
+          <a href="#" class="details">
+            Подробнее
+          </a>
         </li>
       </ul>
 
@@ -344,7 +361,7 @@
         Контакты
       </h2>
       <a href="https://htmlacademy.ru/" class="footer-contacts-logo-link">
-        <img src="logo/Group.png" alt="Логотип Интернет-магазина Девайс" class="footer-contacts-logo">
+        <img src="logo/group.svg" alt="Логотип Интернет-магазина Девайс" class="footer-contacts-logo">
       </a>
       <address class="footer-contacts-address">
         <p class="footer-contacts-address-text">
