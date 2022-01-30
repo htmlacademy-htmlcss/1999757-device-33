@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Каталог</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
@@ -12,7 +13,7 @@
     <nav class="navigation">
 
       <a href="index.html" class="logo">
-        <img src="logo/logo.svg" alt="Логотип Интернет-магазина Девайс" class="logo">
+        <img src="images/logo/logo_black.svg" alt="Логотип Интернет-магазина Девайс" class="logo" width="145" height="36">
       </a>
 
       <form class="search" action="#">
@@ -24,11 +25,12 @@
 
       <ul class="navigation navigation-user">
         <li class="navigation-item">
-          Коля Петухов
-        </li>
-        <li class="navigation-item">
           <a href="#" class="navigation-link">
-            Выйти
+            Коля Петухов
+          </a>
+
+          <a href="#" class="navigation-link">
+            <span> Выйти </span>
           </a>
         </li>
         <li class="navigation-item">
@@ -216,7 +218,7 @@
       <h2>
         Сортировка
       </h2>
-      <select class="select-control">
+      <select class="select-dropdown">
         <option value="popular">Популярные</option>
         <option value="cheap">Самые дешевые</option>
         <option value="dear">Самые дорогие</option>
@@ -241,64 +243,56 @@
 
       <ul class="product-card-list">
         <li class="product-card-item">
-          <a class="product-card-link" href="#">
-            <img src="img/product-1.png" alt="Любительская
-селфи-палка" class="product-card-img">
+            <img src="images/catalog_monopods/catalog_1.png" alt="Любительская
+селфи-палка" class="product-card-img" width="360" height="380">
             <h3 class="product-card-title">
               Любительская
               селфи-палка
             </h3>
-          </a>
           <b class="product-card-price">
             500 ₽
           </b>
-          <a href="#" class="details">
+          <a href="#" class="product-card-all">
             Подробнее
           </a>
         </li>
 
         <li class="product-card-item">
-          <a class="product-card-link" href="#">
-            <img src="img/product-2.png" alt="Профессиональная селфи-палка" class="product-card-img">
+            <img src="images/catalog_monopods/catalog_2.png" alt="Профессиональная селфи-палка" class="product-card-img" width="360" height="380">
             <h3 class="product-card-title">
               Профессиональная селфи-палка
             </h3>
-          </a>
           <b class="product-card-price">
             1 500 ₽
           </b>
-          <a href="#" class="details">
+          <a href="#" class="product-card-all">
             Подробнее
           </a>
         </li>
 
         <li class="product-card-item">
-          <a class="product-card-link" href="#">
-            <img src="img/product-3.png" alt="Непотопляемая
-  селфи-палка" class="product-card-img">
+            <img src="images/catalog_monopods/catalog_3.png" alt="Непотопляемая
+  селфи-палка" class="product-card-img" width="360" height="380">
             <h3 class="product-card-title">
               Непотопляемая селфи-палка
             </h3>
-          </a>
           <b class="product-card-price">
             2 500 ₽
           </b>
-          <a href="#" class="details">
+          <a href="#" class="product-card-all">
             Подробнее
           </a>
         </li>
 
         <li class="product-card-item">
-          <a class="product-card-link" href="#">
-            <img src="img/product-4.png" alt="Селфи-палка «Следуй за мной»" class="product-card-img">
+            <img src="images/catalog_monopods/catalog_4.png" alt="Селфи-палка «Следуй за мной»" class="product-card-img" width="360" height="380">
             <h3 class="product-card-title">
               Селфи-палка «Следуй за мной»
             </h3>
-          </a>
           <b class="product-card-price">
             1 500 ₽
           </b>
-          <a href="#" class="details">
+          <a href="#" class="product-card-all">
             Подробнее
           </a>
         </li>
@@ -361,7 +355,7 @@
         Контакты
       </h2>
       <a href="https://htmlacademy.ru/" class="footer-contacts-logo-link">
-        <img src="logo/group.svg" alt="Логотип Интернет-магазина Девайс" class="footer-contacts-logo">
+        <img src="images/logo/logo_yellow.svg" alt="Логотип Интернет-магазина Девайс" class="footer-contacts-logo" width="145" height="36">
       </a>
       <address class="footer-contacts-address">
         <p class="footer-contacts-address-text">
@@ -398,7 +392,7 @@
       </address>
     </section>
 
-    <section class="footer-social">
+    <section class="footer-social ">
       <ul class="footer-social-list">
         <li class="footer-social-item">
           <a class="button" href="https://www.facebook.com/htmlacademy">
@@ -417,7 +411,7 @@
         </li>
       </ul>
       <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-        <img src="img/htmlacademy.png" alt="html academy">
+        <img src="images/htmlacademy.svg" alt="html academy" width="115" height="33">
       </a>
     </section>
   </footer>
