@@ -19,7 +19,7 @@
 
       <form class="search" action="#">
         <input type="text" name="search" placeholder="Текст поиска" id="search">
-        <button type="submit" value="Найти">
+        <button type="submit" value="Найти" name="button-search">
           Найти
         </button>
       </form>
@@ -50,34 +50,34 @@
 
           <ul class="nested-navigation navigation-list">
             <li class="products-item">
-              <a href="#">
+              <a href="#" class="navigation-link">
                 Виртуальная
                 реальность
               </a>
             </li>
             <li class="products-item">
-              <a href="#">
+              <a href="#" class="navigation-link">
                 Моноподы
                 для селфи
               </a>
             </li>
             <li class="products-item">
-              <a href="#">
+              <a href="#" class="navigation-link">
                 Экшн-камеры
               </a>
             </li>
             <li class="products-item">
-              <a href="#">
+              <a href="#" class="navigation-link">
                 Фитнес-браслеты
               </a>
             </li>
             <li class="products-item">
-              <a href="#">
+              <a href="#" class="navigation-link">
                 Умные часы
               </a>
             </li>
             <li class="products-item">
-              <a href="#">
+              <a href="#" class="navigation-link">
                 Квадрокоптеры
               </a>
             </li>
@@ -119,7 +119,7 @@
       <ul class="products-slider-list">
         <li class="products-slide-item-quadrocopter">
           <img src="images/slider/slider_quadrocopter.png" alt="квадрокоптер" class="slider-quadrocopter" width="560" height="560">
-          <h1>
+          <h1 class="products-slider-title">
             Порхает как бабочка,
             жалит как пчела!
           </h1>
@@ -131,18 +131,18 @@
           </a>
           <table class="properties-quadrocopter">
             <tr>
-              <td>
+              <td class="table-data-value">
                 800 <span>м</span>
               </td>
-              <td>
+              <td class="table-data-value">
                 50 <span>м</span>
               </td>
             </tr>
             <tr>
-              <td>
+              <td class="table-data-property">
                 Дальность полета
               </td>
-              <td>
+              <td class="table-data-property">
                 Радиус поражения
               </td>
             </tr>
@@ -151,7 +151,7 @@
 
         <li class="products-slide-item-bracelet">
           <img src="images/slider/slider_fitness_bracelet.png" alt="фитнес-браслет" class="slider-bracelet" width="560" height="560">
-          <h1>
+          <h1 class="products-slider-title">
             Худеем
             правильно!
           </h1>
@@ -163,12 +163,12 @@
           </a>
           <table class="properties-bracelet">
             <tr>
-              <td>
+              <td class="table-data-value">
                 48 <span>часов</span>
               </td>
             </tr>
             <tr>
-              <td>
+              <td class="table-data-property">
                 Без подзарядки
               </td>
             </tr>
@@ -178,7 +178,7 @@
         <li class="products-slide-item-selfie-stick">
           <img src="images/slider/slider_selfie_stick.png" alt="селфи-палка" class="slider-selfie-stick"
           width="560" height="560">
-          <h1>
+          <h1 class="products-slider-title">
             Делай селфи,
             как Бен Стиллер!
           </h1>
@@ -191,24 +191,24 @@
           </a>
           <table class="properties-selfie-stic">
             <tr>
-              <td>
+              <td class="table-data-value">
                 8,5 <span>м</span>
               </td>
-              <td>
+              <td class="table-data-value">
                 5 <span>кг</span>
               </td>
-              <td>
+              <td class="table-data-value">
                 Карбон
               </td>
             </tr>
             <tr>
-              <td>
+              <td class="table-data-property">
                 Длина палки
               </td>
-              <td>
+              <td class="table-data-property">
                 Вес палки
               </td>
-              <td>
+              <td class="table-data-property">
                 Материал
               </td>
             </tr>
