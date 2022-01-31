@@ -87,3 +87,44 @@ font-display: swap;
   font-size: 16px;
 }
 
+.products-link {
+font-family: Raleway, sans-serif;
+font-weight: 800;
+line-height: 24px;
+letter-spacing: -0.02em;
+color: #000;
+text-decoration: none;
+text-align: left;
+}
+
+.glasses {
+  background-image: url("../images/catalog/glasses.svg");
+  background-repeat: no-repeat;
+}
+
+.monopod {
+  background-image: url("../images/catalog/monopod.svg");
+  background-repeat: no-repeat;
+}
+
+.camera {
+  background-image: url("../images/catalog/camera.svg");
+  background-repeat: no-repeat;
+}
+.bracelet{
+  background-image: url("../images/catalog/bracelet.svg");
+  background-repeat: no-repeat;
+}
+.watch{
+  background-image: url("../images/catalog/watch.svg");
+  background-repeat: no-repeat;
+}
+
+.quadrocopter {
+  background-image: url("../images/catalog/quadrocopter.svg");
+  background-repeat: no-repeat;
+  background-color: #FFE17F;
+  height:160px;
+  position: absolute;
+}
+
