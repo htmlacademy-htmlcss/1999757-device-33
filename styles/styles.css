@@ -30,6 +30,28 @@ font-display: swap;
       color: #444444;
     }
 
+    .button {
+    font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000;
+    }
+
+    .link{
+      font-family: Raleway, sans-serif;
+      font-weight: 800;
+      line-height: 21px;
+      text-align: center;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #000;
+    }
+
     .page-header {
     color:#000000;
     background: #FFE17F;
@@ -59,7 +81,7 @@ font-display: swap;
       text-align: left;
     }
 
-    .products-slider-title{
+    .title{
     font-family: Raleway, sans-serif;
     font-weight: 800;
     font-size: 50px;
@@ -67,16 +89,6 @@ font-display: swap;
     color: #000;
 }
 
-.products-slider-more {
-  font-family: Raleway, sans-serif;
-  font-weight: 800;
-  line-height: 21px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #000;
-  text-decoration: none;
-  letter-spacing: 0.2em;
-}
 
 .table-data-value {
   font-size: 36px;
@@ -88,13 +100,10 @@ font-display: swap;
 }
 
 .products-link {
-font-family: Raleway, sans-serif;
-font-weight: 800;
 line-height: 24px;
 letter-spacing: -0.02em;
-color: #000;
-text-decoration: none;
 text-align: left;
+text-transform: none;
 }
 
 .glasses {
@@ -123,8 +132,53 @@ text-align: left;
 .quadrocopter {
   background-image: url("../images/catalog/quadrocopter.svg");
   background-repeat: no-repeat;
-  background-color: #FFE17F;
-  height:160px;
-  position: absolute;
 }
 
+
+.product-under-the-order{
+  background-color: #F0F0F0 ;
+}
+
+button[name="button-delivery"] {
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.about-us-link {
+font-weight: bold;
+line-height: 20px;
+letter-spacing: -0.02em;
+text-decoration: none;
+color: #000;
+}
+
+.contacts-subtitle {
+font-weight: bold;
+font-size: 24px;
+}
+
+.footer {
+  background-color: #444444 ;
+  color: #FFFFFF;
+}
+
+.footer-contacts-address-text {
+  font-size: 16px;
+line-height: 19px;
+}
+
+.footer-navigation-link {
+  color: #FFFFFF;
+}
+
+.footer-phone-address,
+.footer-phone-link {
+font-size: 16px;
+line-height: 20px;
+color: #FFFFFF;
+}
+
+.footer-social-button {
+  color: #FFFFFF;
+  text-decoration: none;
+}
