@@ -1,0 +1,267 @@
+@font-face {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 800;
+    src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+body {
+    font-family: Rubik, sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    background-color: #ffffff;
+    color: #444444;
+}
+
+.button {
+    font-family: Raleway, sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.link {
+    font-family: Raleway, sans-serif;
+    font-weight: 800;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+}
+
+.page-header {
+    color: #000000;
+    background: #FFE17F;
+}
+
+input[name="search"],
+button[name="button-search"] {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.navigation-link {
+    color: #000000;
+    background-color: #FFE17F;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navigation-list .navigation-link {
+    font-family: Raleway, sans-serif;
+    line-height: 22px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.products-slider-list {
+    text-align: left;
+}
+
+.title {
+    font-family: Raleway, sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+    color: #000;
+}
+
+.table-data-value {
+    font-size: 36px;
+    color: #000;
+}
+
+.table-data-property {
+    font-size: 16px;
+}
+
+.products-link {
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    text-transform: none;
+}
+
+.glasses {
+    background-image: url("../images/catalog/glasses.svg");
+    background-repeat: no-repeat;
+}
+
+.monopod {
+    background-image: url("../images/catalog/monopod.svg");
+    background-repeat: no-repeat;
+}
+
+.camera {
+    background-image: url("../images/catalog/camera.svg");
+    background-repeat: no-repeat;
+}
+
+.bracelet {
+    background-image: url("../images/catalog/bracelet.svg");
+    background-repeat: no-repeat;
+}
+
+.watch {
+    background-image: url("../images/catalog/watch.svg");
+    background-repeat: no-repeat;
+}
+
+.quadrocopter {
+    background-image: url("../images/catalog/quadrocopter.svg");
+    background-repeat: no-repeat;
+}
+
+.product-under-the-order {
+    background-color: #F0F0F0;
+}
+
+button[name="button-delivery"] {
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.about-us-link {
+    font-weight: bold;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+    color: #000;
+}
+
+.contacts-subtitle {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.contacts-phone {
+    color: #444444;
+}
+
+.page-footer {
+    background-color: #444444;
+    color: #FFFFFF;
+}
+
+.footer-contacts-address-text {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.footer-navigation-link {
+    color: #FFFFFF;
+}
+
+.contacts-address,
+.footer-phone-address,
+.footer-contacts-address {
+    font-style: normal;
+}
+
+.footer-phone-link {
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.footer-social-button {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.breadcrumbs-link {
+    font-size: 16px;
+    line-height: 19px;
+    color: #000;
+    text-decoration: none;
+}
+
+.catalog-products {
+    color: #000;
+    background-color: #CCCCCC;
+}
+
+.filter {
+    font-family: Raleway, sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.catalog-filter-title {
+    font-family: Rubik, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+}
+
+.catalog-filter-list {
+    font-family: Rubik;
+    font-weight: normal;
+    text-transform: none;
+}
+
+.select-dropdown {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000;
+}
+
+.container {
+    background-color: #ffffff;
+}
+
+.product-card-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+.product-card-price {
+    line-height: 21px;
+    text-align: right;
+}
+
+.pagination-show-more {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.pagination-link {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #444444;
+    text-decoration: none;
+}
