@@ -1,5 +1,5 @@
 @font-face {
-    font-family: Raleway;
+    font-family: "Raleway";
     font-style: normal;
     font-weight: 800;
     src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-    font-family: Rubik;
+    font-family: "Rubik";
     font-style: normal;
     font-weight: 400;
     src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-    font-family: Rubik;
+    font-family: "Rubik";
     font-style: normal;
     font-weight: 700;
     src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
@@ -23,7 +23,7 @@
 }
 
 body {
-    font-family: Rubik, sans-serif;
+    font-family: "Rubik", sans-serif;
     font-size: 18px;
     line-height: 30px;
     background-color: #ffffff;
@@ -31,7 +31,7 @@ body {
 }
 
 .button {
-    font-family: Raleway, sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 21px;
@@ -42,7 +42,7 @@ body {
 }
 
 .link {
-    font-family: Raleway, sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: 800;
     line-height: 21px;
     text-align: center;
@@ -82,7 +82,7 @@ button[name="button-search"] {
 }
 
 .title {
-    font-family: Raleway, sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: 800;
     font-size: 50px;
     line-height: 50px;
@@ -205,7 +205,7 @@ button[name="button-delivery"] {
 }
 
 .filter {
-    font-family: Raleway, sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: 800;
     font-size: 16px;
     line-height: 19px;
@@ -214,21 +214,18 @@ button[name="button-delivery"] {
 }
 
 .catalog-filter-title {
-    font-family: Rubik, sans-serif;
     font-weight: bold;
-    font-size: 18px;
     line-height: 20px;
     letter-spacing: -0.02em;
 }
 
 .catalog-filter-list {
-    font-family: Rubik;
-    font-weight: normal;
-    text-transform: none;
+    font-size: 16px;
+    line-height: 19px;
 }
 
 .select-dropdown {
-    font-family: Rubik;
+    font-family: "Rubik";
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
