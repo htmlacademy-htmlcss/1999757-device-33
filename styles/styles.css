@@ -198,6 +198,11 @@ body {
   margin: 0;
 }
 
+.product-description-term,
+.product-description-description {
+  width: 452px;
+}
+
 .product-under-the-order {
   background-color: #F0F0F0;
 }
@@ -304,8 +309,19 @@ body {
 }
 
 .catalog-products {
+  display: flex;
   color           : #000;
   background-color: #CCCCCC;
+}
+
+.catalog-filter{
+  width: 200px;
+  margin-right: 60px;
+
+}
+
+.catalog-right-column {
+  width: 840px;
 }
 
 .filter {
@@ -337,7 +353,7 @@ body {
   color      : #000;
 }
 
-.container {
+.product-card-container {
   background-color: #ffffff;
 }
 
@@ -370,3 +386,4 @@ body {
 .main-container {
   flex-grow: 1;
 }
+
