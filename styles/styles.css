@@ -191,20 +191,27 @@ body {
   margin-bottom: 30px;
 }
 
-.products-slider-description{
-  margin: 0;
+.products-slider-description {
+  margin       : 0;
   margin-bottom: 52px;
 }
 
-.properties-datasheet{
-  border-spacing: 20px 12px;
+.properties-datasheet {
+  border-spacing : 0;
+  border-collapse: separate;
+}
+
+.cell {
+  padding       : 0;
+  padding-right : 20px;
+  padding-bottom: 12px;
 }
 
 .products-slider-more {
-  display: block;
-  padding: 10px 5px;
+  display      : block;
+  padding      : 10px 5px;
   margin-bottom: 50px;
-  text-align: left;
+  text-align   : left;
 }
 
 .title {
@@ -224,16 +231,18 @@ body {
   font-size: 16px;
 }
 
+
+
 .slider-pagination {
-  display: flex;
+  display  : flex;
   flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
+  margin   : 0;
+  padding  : 0;
   min-width: 64px;
 }
 
-.slider-pagination-item:not(:last-child){
-padding-right: 20px;
+.slider-pagination-item:not(:last-child) {
+  padding-right: 20px;
 }
 
 .products {
@@ -245,7 +254,7 @@ padding-right: 20px;
   padding        : 0;
   text-align     : center;
   display        : flex;
-  flex-wrap: wrap;
+  flex-wrap      : wrap;
   justify-content: space-between;
 }
 
@@ -258,7 +267,7 @@ padding-right: 20px;
   letter-spacing: -0.02em;
   text-align    : left;
   text-transform: none;
-  display: block;
+  display       : block;
 }
 
 
@@ -292,42 +301,83 @@ padding-right: 20px;
   background-repeat: no-repeat;
 }
 
+.advantages {
+  margin-bottom: 70px;
+}
+
 .wrapper-advantages {
   display: flex;
 
 }
 
 .advantages-list {
-  width          : 280px;
-  height         : 190px;
-  display        : flex;
-  flex-direction : column;
-  justify-content: space-between;
   padding        : 0;
   margin         : 0;
+  width          : 280px;
+  display        : flex;
+  flex-wrap      : wrap;
+  flex-direction : column;
+  align-items    : flex-start;
+  list-style-type: none;
+
 }
+
+.advantages-item {
+  margin-bottom: 35px;
+}
+
+.advantages-button {
+  border : none;
+  padding: 10px 4px;
+}
+
+.advantage-description-list {
+  margin        : 0;
+  padding       : 0;
+  display       : flex;
+  flex-wrap     : wrap;
+  flex-direction: column;
+  width         : 430px;
+}
+
 
 .advantage-description-term,
 .advantage-description-description {
-  width: 452px;
+  margin: 0;
+
 }
 
+.advantage-description-term {
+  margin-bottom: 34px;
+}
+
+.delivery {
+  display        : flex;
+  justify-content: center;
+  margin-bottom  : 70px;
+}
 
 .button-delivery {
-  font-size  : 20px;
-  line-height: 23px;
+  font-size    : 20px;
+  line-height  : 23px;
+  border       : none;
+  padding      : 20px 36px;
+  margin-top   : 20px;
+  margin-bottom: 20px;
 }
 
 .index-columns {
   display        : flex;
   justify-content: space-between;
+  margin-bottom  : 70px;
 }
 
 .about-us {
-  width: 50%;
+  width       : 520px;
+  margin-right: 108px;
 }
 
-.about-us-link {
+.delivery-service-link {
   font-weight    : bold;
   line-height    : 20px;
   letter-spacing : -0.02em;
@@ -335,18 +385,72 @@ padding-right: 20px;
   color          : #000;
 }
 
+.about-us-link,
+.contacts-link {
+  display   : block;
+  width     : 270px;
+  padding   : 10px 6px;
+  text-align: left;
+  margin-top: 10px;
+}
+
+
+
 .contacts {
-  width       : 50%;
-  padding-left: 70px;
+  width: 532px;
+}
+
+.about-us-title,
+.contacts-title {
+  margin-top   : 48px;
+  margin-bottom: 48px;
+}
+
+.about-us-description,
+.contacts-description {
+  padding      : 0;
+  margin       : 0;
+  margin-bottom: 30px;
+}
+
+.about-us-list {
+  padding        : 0;
+  margin         : 0;
+  list-style-type: none;
+}
+
+.about-us-item {
+  margin-bottom: 20px;
 }
 
 .contacts-subtitle {
-  font-weight: bold;
-  font-size  : 24px;
+  font-weight  : bold;
+  font-size    : 24px;
+  margin       : 0;
+  margin-bottom: 15px;
+}
+
+.contacts-address {
+  margin-bottom: 30px;
+}
+
+.contacts-address-text {
+  margin: 0;
+}
+
+.contacts-schedule {
+  list-style-type: none;
+  margin         : 0;
+  padding        : 0;
+  margin-bottom  : 30px;
 }
 
 .contacts-phone {
   color: #444444;
+}
+
+.newsletter {
+  padding-bottom: 56px;
 }
 
 .newsletter-wrapper {
@@ -355,17 +459,38 @@ padding-right: 20px;
   justify-content: space-between;
 }
 
+.newsletter-nested-wrapper {
+  width          : 1160px;
+  display        : flex;
+  flex-wrap      : wrap;
+  justify-content: space-between;
+  margin-top     : 64px;
+  margin-bottom  : 144px;
+}
+
 .newsletter-title {
   width : 348px;
   margin: 0;
 }
 
 .newsletter-text {
-  width: 527px;
+  width : 527px;
+  margin: 0;
+}
+
+.newsletter-form-wrapper {
+  display        : flex;
+  flex-wrap      : wrap;
+  width          : 1160px;
+  justify-content: space-between;
 }
 
 .newsletter-form {
   width: 810px;
+}
+
+.newsletter-form-description {
+  margin: 0;
 }
 
 .page-footer {
@@ -381,34 +506,35 @@ padding-right: 20px;
   align-items: center;
 }
 
-.footer-contacts {
-  width       : 239px;
-  margin-right: 112px;
+.footer-logo-wrapper {
+  width        : 100%;
+  display      : block;
+  margin-top   : 62px;
+  margin-bottom: 35px;
 }
 
 .footer-contacts-address-text {
-  font-size  : 16px;
-  line-height: 19px;
+  font-size   : 16px;
+  line-height : 19px;
+  margin      : 0;
+  width       : 240px;
+  margin-right: 112px;
 }
 
-.footer-navigation {
-  width       : 444px;
-  margin-right: 140px;
-  display     : flex;
-}
 
 .footer-navigation-list {
-  width          : 444px;
-  display        : flex;
-  justify-content: center;
   padding        : 0;
   margin         : 0;
+  width          : 444px;
+  display        : flex;
+  justify-content: space-between;
   list-style     : none;
-  gap            : 35px;
+
 }
 
 .footer-navigation-link {
-  color: #FFFFFF;
+  padding: 10px 6px;
+  color  : #FFFFFF;
 }
 
 .footer-phone-number {
@@ -431,14 +557,17 @@ padding-right: 20px;
 }
 
 .footer-social {
-  width: 100%;
+  width: ;
 }
 
 .footer-social-list {
-  margin         : 0 auto;
-  display        : flex;
-  gap            : 40px;
-  justify-content: center;
+  width: 150px;
+  margin            : 0;
+  padding           : 0;
+  display           : flex;
+  flex-wrap         : wrap;
+  /* gap            : 40px; */
+  justify-content   : space-between;
 }
 
 .footer-social-button {
@@ -446,11 +575,11 @@ padding-right: 20px;
   text-decoration: none;
 }
 
-.wrapper-htmlacademy-link {
+/* .wrapper-htmlacademy-link {
   width          : 100%;
   display        : flex;
   justify-content: end;
-}
+} */
 
 .breadcrumbs {
   display   : flex;
