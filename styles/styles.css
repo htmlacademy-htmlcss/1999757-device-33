@@ -322,7 +322,6 @@ body {
 
 .wrapper-advantages {
   display: flex;
-
 }
 
 .advantages-list {
@@ -354,7 +353,6 @@ body {
   flex-direction: column;
   width         : 430px;
 }
-
 
 .advantage-description-term,
 .advantage-description-description {
@@ -408,8 +406,6 @@ body {
   text-align: left;
   margin-top: 10px;
 }
-
-
 
 .contacts {
   width: 532px;
@@ -536,7 +532,6 @@ body {
   margin-right: 112px;
 }
 
-
 .footer-navigation-list {
   padding        : 0;
   margin         : 0;
@@ -562,8 +557,6 @@ body {
 .footer-contacts-address {
   font-style: normal;
 }
-
-
 
 .footer-phone-link {
   font-size  : 16px;
@@ -605,8 +598,7 @@ body {
 }
 
 .catalog-products {
-  padding-top  : 26px;
-
+  padding-top: 26px;
 }
 
 .breadcrumbs {
@@ -619,7 +611,6 @@ body {
   justify-content: space-between;
   margin-bottom  : 36px;
 }
-
 
 .breadcrumbs-link {
   font-size      : 16px;
@@ -650,7 +641,6 @@ body {
   height : 30px;
 }
 
-
 .filter-title {
   margin      : 0;
   margin-left : 40px;
@@ -659,10 +649,7 @@ body {
 
 .wrapper-catalog-products {
   display: flex;
-
 }
-
-
 
 .catalog-filter {
   width       : 200px;
@@ -709,7 +696,7 @@ body {
 
 .product-card-container {
   background-color: #ffffff;
-  padding-bottom: 78px;
+  padding-bottom  : 78px;
 }
 
 .product-card-list {
@@ -731,8 +718,6 @@ body {
   line-height: 21px;
   text-align : right;
 }
-
-
 
 .button-wrapper {
   display        : flex;
@@ -764,8 +749,7 @@ body {
   list-style-type : none;
   background-color: #EBEBEB;
   color           : #000;
-  align-items: center;
-
+  align-items     : center;
 }
 
 .pagination-previous,
@@ -774,11 +758,11 @@ body {
   padding: 25px;
 }
 
-.pagination-previous{
+.pagination-previous {
   margin-right: 146px;
 }
 
-.pagination-next{
+.pagination-next {
   margin-left: auto;
 }
 
@@ -788,15 +772,11 @@ body {
   text-align     : center;
   color          : #444444;
   text-decoration: none;
-  display: block;
-  width: 40px;
-  height: 40px;
-  padding: 10px 16px;
-
-
+  display        : block;
+  width          : 40px;
+  height         : 40px;
+  padding        : 10px 16px;
 }
-
-
 
 .bg-grey {
   background-color: #F0F0F0;
