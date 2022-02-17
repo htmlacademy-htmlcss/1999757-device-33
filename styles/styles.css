@@ -90,15 +90,14 @@ body {
 .navigation {
   display      : flex;
   flex-wrap    : wrap;
-  margin-bottom: 22px;
+ padding: 18px 60px 22px;
 }
 
 .logo-navigation {
   width        : 100%;
   display      : block;
-  padding-top   : 18px;
-  padding-bottom: 15px;
-  padding-left  : 60px;
+  padding-bottom: 30px;
+
 }
 
 .search-navigation-user {
@@ -108,14 +107,10 @@ body {
   margin-bottom: 15px;
   padding-left: 60px;
   padding-right: 40px ;
-
-
 }
 
 .search {
   width       : 517px;
-  margin-right: 6px;
-
 }
 
 
@@ -125,56 +120,81 @@ body {
   margin         : 0;
   padding        : 0;
   list-style-type: none;
-
 }
 
 .navigation-user {
+  width: 496px;
   margin-left : auto;
+  justify-content: flex-end;
 }
+
+.navigation-user .navigation-item:nth-child(1) {
+  width: 252px;
+  padding-right: 26px;
+}
+
+.navigation-user .navigation-item:nth-child(2) {
+  padding-right: 36px;
+}
+
+
 
 .navigation-link {
   color           : #000000;
   background-color: #FFE17F;
   text-decoration : none;
   text-align      : center;
-  padding         : 15px 20px;
   display         : block;
+  text-align: left;
+}
 
+.entrance-link
+{padding-left: 27px;
+}
+
+.compare-link {
+  padding-left: 22px;
+}
+
+.basket-link {
+  padding-left: 25px;
 }
 
 .navigation-list {
   list-style-type: none;
-  padding-left    : 40px;
-  padding-right   : 40px;
   width: 100%;
+  position: relative;
+  margin-top: 30px;
+  justify-content: space-between;
 }
 
-
+.navigation-list .navigation-item:nth-child(1) {
+  width: 293px;
+  margin-right: 276px;
+}
 
 .nested-navigation-wrapper {
   display: flex;
   flex-wrap: wrap;
   position: absolute;
-  padding-left: 20px;
+  top: 100%;
+  left: -60px;
+  right: -60px;
+  padding-left: 60px;
+  background: #FFE17F;
+
 }
 
 .nested-navigation-list {
   padding: 0;
-  width: 222px;
+  width: 223px;
 }
 
 .nested-navigation-list:not(:last-child){
-  margin-right: 30px;
+  padding-right: 30px;
 }
 
-.navigation-user .navigation-item:nth-child(1) {
-  margin-right: 310px;
-}
 
-.navigation-list .navigation-item:nth-child(1) {
-margin-right: 310px;
-
-}
 
 .input-search,
 .button-search {
@@ -619,7 +639,7 @@ margin-right: 310px;
 }
 
 .main-inner {
-  margin-top: 58px;
+  padding-top: 130px;
 }
 
 .inner-header-title {
@@ -629,6 +649,11 @@ margin-right: 310px;
 
 .catalog-products {
   padding-top: 26px;
+}
+
+.user-account {
+  display: flex;
+  justify-content: space-between;
 }
 
 .breadcrumbs {
