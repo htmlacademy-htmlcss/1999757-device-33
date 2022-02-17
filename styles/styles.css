@@ -120,7 +120,7 @@ body {
 
 .navigation-header {
   display        : flex;
-  flex-wrap      : wrap;
+  flex-wrap: wrap;
   margin         : 0;
   padding        : 0;
   list-style-type: none;
@@ -159,10 +159,14 @@ body {
   flex-wrap: wrap;
 }
 
-.navigation-list .navigation-item:nth-child(1) {
+.navigation-user .navigation-item:nth-child(1) {
   margin-right: 310px;
 }
 
+.navigation-list .navigation-item:nth-child(1) {
+margin-right: 310px;
+
+}
 
 .input-search,
 .button-search {
