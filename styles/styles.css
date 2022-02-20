@@ -79,7 +79,7 @@ body {
 
 .page-header {
   color     : #000000;
-  background: #FFE17F;
+  background-image: linear-gradient(to bottom, #fff, 38px, #fff, 38px, #FFE17D 100%)
 }
 
 .page-container {
@@ -110,9 +110,28 @@ body {
 }
 
 .search {
+  display: grid;
+  grid-template-columns: 359px 160px;
   width       : 517px;
 }
 
+.input-search {
+  border-radius: 50px 0px 0px 50px;
+  border: 2px solid #000000;
+  border-width: medium;
+  padding-left:48px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+background-color: #FFE17F;
+}
+
+.button-search{
+border-radius: 0px 50px 50px 0px;
+border: 2px solid #000000;
+border-width: medium;
+border-left: none;
+background-color: #FFE17F;
+}
 
 .navigation-header {
   display        : flex;
@@ -193,7 +212,6 @@ body {
 .nested-navigation-list:not(:last-child){
   padding-right: 30px;
 }
-
 
 
 .input-search,
