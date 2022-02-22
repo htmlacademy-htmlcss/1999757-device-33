@@ -17,6 +17,7 @@
             height="36">
         </a>
       </div>
+
       <form class="search" action="#" method="get">
         <input class="input-search" type="text" name="search" placeholder="Текст поиска" id="search">
         <button class="button-search" type="submit">
@@ -25,23 +26,21 @@
       </form>
 
       <ul class="navigation-header navigation-user">
-        <li class="navigation-item">
-          <a href="#" class="navigation-link">
+        <li class="navigation-item user-account">
+          <a href="#" class="navigation-link entrance-link">
             Коля Петухов
           </a>
-        </li>
-        <li>
           <a href="#" class="navigation-link">
             <span> Выйти </span>
           </a>
         </li>
         <li class="navigation-item">
-          <a href="#" class="navigation-link">
+          <a href="#" class="navigation-link compare-link">
             Сравнить
           </a>
         </li>
         <li class="navigation-item">
-          <a href="#" class="navigation-link">
+          <a href="#" class="navigation-link basket-link">
             Корзина
           </a>
         </li>
@@ -52,41 +51,46 @@
           <a href="catalog.html" class="navigation-link link">
             Каталог товаров
           </a>
-
-          <ul class="nested-navigation navigation-list">
-            <li class="products-item">
-              <a href="#" class="navigation-link link">
-                Виртуальная
-                реальность
-              </a>
-            </li>
-            <li class="products-item">
-              <a href="#" class="navigation-link link">
-                Моноподы
-                для селфи
-              </a>
-            </li>
-            <li class="products-item">
-              <a href="#" class="navigation-link link">
-                Экшн-камеры
-              </a>
-            </li>
-            <li class="products-item">
-              <a href="#" class="navigation-link link">
-                Фитнес-браслеты
-              </a>
-            </li>
-            <li class="products-item">
-              <a href="#" class="navigation-link link">
-                Умные часы
-              </a>
-            </li>
-            <li class="products-item">
-              <a href="#" class="navigation-link link">
-                Квадрокоптеры
-              </a>
-            </li>
-          </ul>
+          <div class="nested-navigation-wrapper">
+            <ul class="nested-navigation-list navigation-list">
+              <li class="products-item">
+                <a href="#" class="nested-navigation-link">
+                  Виртуальная
+                  реальность
+                </a>
+              </li>
+              <li class="products-item">
+                <a href="#" class="nested-navigation-link">
+                  Моноподы
+                  для селфи
+                </a>
+              </li>
+              <li class="products-item">
+                <a href="#" class="nested-navigation-link">
+                  Экшн-камеры
+                </a>
+              </li>
+            </ul>
+            <ul class="nested-navigation-list navigation-list">
+              <li class="products-item">
+                <a href="#" class="nested-navigation-link">
+                  Фитнес-браслеты
+                </a>
+              </li>
+              <li class="products-item">
+                <a href="#" class="nested-navigation-link">
+                  Умные часы
+                </a>
+              </li>
+            </ul>
+            <ul class="nested-navigation-list navigation-list">
+              <li class="products-item">
+                <a href="#" class="nested-navigation-link">
+                  Квадрокоптеры
+                </a>
+              </li>
+            </ul>
+          </div>
         </li>
 
         <li class="navigation-item">
