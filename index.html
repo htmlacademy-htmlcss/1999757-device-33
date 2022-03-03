@@ -19,8 +19,8 @@
         </a>
       </div>
       <form class="search" action="#" method="get">
-          <input class="input-search" type="text" name="search" placeholder="Текст поиска" id="search">
-        <button class="button-search" type="submit">
+      <input class="input-search" type="text" name="search" placeholder="Текст поиска" id="search">
+<button class="button-search" type="submit">
           Найти
         </button>
       </form>
@@ -45,7 +45,7 @@
 
       <ul class="navigation-header navigation-list">
         <li class="navigation-item">
-          <a href="catalog.html" class="navigation-link link">
+          <a href="catalog.html" class="link  menu-toggle">
             Каталог товаров
           </a>
           <div class="nested-navigation-wrapper">
@@ -57,7 +57,7 @@
                 </a>
               </li>
               <li class="products-item">
-                <a href="#" class="nested-navigation-link">
+                <a href="catalog.html" class="nested-navigation-link">
                   Моноподы
                   для селфи
                 </a>
@@ -123,7 +123,7 @@
       </h2>
 
       <ul class="products-slider-list">
-        <li class="products-slide-item">
+        <li class="products-slide-item  is-active">
           <div class="slider-image-wrapper">
             <img src="images/slider/slider_quadrocopter.png" alt="квадрокоптер" class="slider-image" width="560"
               height="560">
@@ -241,7 +241,7 @@
       </button>
 
       <button class="slider-button slider-next" type="button">
-      <span class="visually-hidden">
+        <span class="visually-hidden">
           Следующее фото
         </span>
       </button>
@@ -249,7 +249,7 @@
 
       <ol class="slider-pagination">
         <li class="slider-pagination-item">
-          <button class="slider-pagination-button" type="button">
+          <button class="slider-pagination-button  is-active" type="button">
             <span class="visually-hidden">1 слайд</span>
           </button>
         </li>
@@ -338,17 +338,17 @@
 
           <li class="advantages-item ">
             <button class="advantages-button button " type="button ">
-              Доставка
+              <span>Доставка</span>
             </button>
           </li>
           <li class="advantages-item ">
             <button class="advantages-button button " type="button ">
-              Гарантия
+              <span>Гарантия</span>
             </button>
           </li>
           <li class="advantages-item ">
             <button class="advantages-button button " type="button ">
-              Кредит
+              <span>Кредит</span>
             </button>
           </li>
 
@@ -564,6 +564,8 @@
 
 
   </footer>
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>
