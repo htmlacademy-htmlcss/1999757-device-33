@@ -690,21 +690,29 @@ body {
   transition: all 0.3s ease;
 }
 
-.advantages-button:hover::after {
+.advantages-button:hover::after,
+.contacts-link:hover::after,
+.about-us-link:hover::after {
   height: 100%;
 }
 
-.advantages-button:active::after {
+.advantages-button:active::after,
+.contacts-link:active::after,
+.about-us-link:active::after {
   background-color: #FFCC33;
   height: 100%;
 }
 
-.advantages-button:focus::after {
+.advantages-button:focus::after,
+.contacts-link:focus::after,
+.about-us-link:focus::after {
   outline: 2px solid #AF4FFF;
   outline-offset: 10px;
 }
 
-.advantages-button:disabled::after {
+.advantages-button:disabled::after,
+.contacts-link:disabled::after,
+.about-us-link:disabled::after {
   opacity: 0.3;
 }
 
