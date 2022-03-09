@@ -101,17 +101,22 @@ body {
   width: 100%;
   display: block;
   padding-bottom: 30px;
-
 }
 
-/* .search-navigation-user {
-  display: flex;
-  width: 100%;
-  align-items: baseline;
-  margin-bottom: 15px;
-  padding-left: 60px;
-  padding-right: 40px;
-} */
+.logo-link:hover,
+.footer-contacts-logo-link:hover {
+  opacity: 0.6;
+}
+
+.logo-link:active,
+.footer-contacts-logo-link:active{
+  opacity: 0.3;
+}
+
+.logo-link:focus,
+.footer-contacts-logo-link:focus{
+  outline: 2px solid #AF4FFF;
+}
 
 .search {
   display: grid;
@@ -382,6 +387,28 @@ body {
   padding: 10px 5px;
   margin-bottom: 50px;
   text-align: left;
+  padding-left: 39px;
+  position: relative;
+}
+
+.products-slider-more span{
+  position: relative;
+  z-index: 2;
+}
+
+.products-slider-more::after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 19px;
+  right: 0;
+  transform: translate(-20px, -50%);
+  display: block;
+  width: 220px;
+  height: 8px;
+  background-color: #FFE17F;
+  z-index: 1;
+  transition: all 0.3s ease;
 }
 
 .title {
@@ -442,9 +469,7 @@ body {
 .slider-previous:focus,
 .slider-next:focus {
   outline: 2px solid #AF4FFF;
-  ;
 }
-
 
 .slider-pagination {
   display: flex;
@@ -454,7 +479,7 @@ body {
   min-width: 64px;
   list-style: none;
   position: absolute;
-  bottom: 292px;
+  bottom: 293px;
   right: 0px;
 }
 
@@ -692,27 +717,31 @@ body {
 
 .advantages-button:hover::after,
 .contacts-link:hover::after,
-.about-us-link:hover::after {
+.about-us-link:hover::after,
+.products-slider-more:hover::after {
   height: 100%;
 }
 
 .advantages-button:active::after,
 .contacts-link:active::after,
-.about-us-link:active::after {
+.about-us-link:active::after,
+.products-slider-more:active::after {
   background-color: #FFCC33;
   height: 100%;
 }
 
 .advantages-button:focus::after,
 .contacts-link:focus::after,
-.about-us-link:focus::after {
+.about-us-link:focus::after,
+.products-slider-more:focus::after {
   outline: 2px solid #AF4FFF;
   outline-offset: 10px;
 }
 
 .advantages-button:disabled::after,
 .contacts-link:disabled::after,
-.about-us-link:disabled::after {
+.about-us-link:disabled::after,
+.products-slider-more:disabled::after {
   opacity: 0.3;
 }
 
@@ -1518,7 +1547,6 @@ outline: 1px solid #AF4FFF;
   display: block;
   text-align: left;
   position: relative;
-  /* padding: 14px 0; */
   display: grid;
   grid-template-columns: 236px 50px;
   column-gap: 7px;
@@ -1536,7 +1564,6 @@ outline: 1px solid #AF4FFF;
 
 .menu-toggle:focus {
   outline: 2px solid #AF4FFF;
-  outline-offset: 2px;
 }
 
 .menu-toggle::after {
