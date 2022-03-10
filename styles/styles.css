@@ -185,17 +185,18 @@ body {
 
 .navigation-user {
   width: 496px;
-  margin-left: auto;
-  justify-content: flex-end;
+  margin-left: 26px;
+  justify-content: space-between;
 }
 
 .navigation-user .navigation-item:nth-child(1) {
   width: 231px;
-  padding-right: 26px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .navigation-user .navigation-item:nth-child(2) {
-  padding-right: 36px;
+
 }
 
 .navigation-link {
@@ -228,6 +229,10 @@ body {
 .navigation-link:focus,
 .nested-navigation-link:focus {
   outline: 2px solid #AF4FFF;
+}
+
+.navigation-link.disabled{
+  opacity: 0.3;
 }
 
 .compare-link {
@@ -507,6 +512,7 @@ body {
   position: absolute;
   bottom: 293px;
   right: 0px;
+  z-index: 10;
 }
 
 .slider-pagination-item:not(:last-child) {
@@ -1156,7 +1162,8 @@ body {
   width: 557px;
   padding: 0;
   border: none;
-  padding-bottom: 14px;
+  padding-top: 11px;
+  padding-bottom: 11px;
   padding-left: 16px;
   background-color: inherit;
   border-bottom: 3px solid #C4C4C4;
@@ -1167,7 +1174,7 @@ body {
   width: 253px;
   padding: 0;
   border: 3px solid #CECECE;
-  padding: 18px 39px;
+  padding: 15px 39px;
 
 }
 
@@ -1219,8 +1226,8 @@ body {
 }
 
 .footer-navigation-link {
-  padding: 10px 6px;
   color: #FFFFFF;
+  padding-bottom: 4px;
 }
 
 .footer-phone-number {
@@ -1273,11 +1280,6 @@ body {
   margin-right: 390px;
 }
 
-.footer-social-item{
-  border-radius: 50%;
-  overflow: hidden;
-}
-
 .footer-navigation-link:hover,
 .footer-phone-address:hover,
 .footer-phone-link:hover {
@@ -1299,14 +1301,11 @@ opacity: 0.3;
   border-bottom: 2px solid#FFC700;
   }
 
-  .footer-navigation-link:focus,
+.footer-navigation-link:focus,
 .footer-phone-address:focus,
 .footer-phone-link:focus{
   outline: 2px solid #AF4FFF;;
 }
-
-
-
 
 .footer-social-button {
   color: #FFFFFF;
@@ -1314,28 +1313,38 @@ opacity: 0.3;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
-  background-color: #7c7c7c;
-  transition: all 0.3s ease;
+  position: relative;
 }
 
-.footer-social-button:hover {
+.footer-social-button::before{
+content: "";
+width: 40px;
+height: 40px;
+border-radius: 50%;
+background-color: #7c7c7c;
+transition: all 0.3s ease;
+}
+
+.svg-social{
+  position: absolute;
+}
+
+.footer-social-button:hover::before {
   background-color: #FFC700;
 }
 
-.footer-social-button:active{
+.footer-social-button:active::before{
   background-color: #FFC700;
 }
 
-.footer-social-button:active .svg-social {
-opacity: 0.3;
+.footer-social-button:active .svg-social{
+  opacity: 0.3;
 }
 
 .footer-social-button:focus{
-  border: 2px solid #AF4FFF;
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
-
 
 .htmlacademy-link{
   color:#FFC700;
@@ -1355,7 +1364,7 @@ outline: 1px solid #AF4FFF;
 }
 
 .main-inner {
-  padding-top: 130px;
+  padding-top: 35px;
 }
 
 .inner-header-title {
@@ -1452,14 +1461,15 @@ outline: 1px solid #AF4FFF;
 .catalog-control-link-up,
 .catalog-control-link-down {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .catalog-control-link-up::after{
   content: "";
-  display: block;
-  position: absolute;
-  top: 10px;
-  left:9.5px;
   width: 11px;
   height: 10px;
   background-image: url(../images/icons/scroling1.svg);
@@ -1469,10 +1479,6 @@ outline: 1px solid #AF4FFF;
 
 .catalog-control-link-down::after{
   content: "";
-  display: block;
-  position: absolute;
-  top: 10px;
-  left:9.5px;
   width: 11px;
   height: 10px;
   background-image: url(../images/icons/scroling1.svg);
@@ -1494,7 +1500,6 @@ opacity: 1;
 .catalog-control-link-up:focus,
 .catalog-control-link-down:focus{
   outline: 2px solid #AF4FFF;
-  outline-offset: 10px;
 }
 
 .filter-title {
@@ -1727,8 +1732,7 @@ outline-offset: 2px;
 .pagination-link {
   font-size: 16px;
   line-height: 20px;
-  color: #444444;
-  opacity: 0.3;
+  color:rgba(68, 68, 68, 0.3);
   text-decoration: none;
   display: flex;
   justify-content: center;
@@ -1738,11 +1742,11 @@ outline-offset: 2px;
 }
 
 .pagination-link:hover{
-  opacity: 1;
+  color:rgba(68, 68, 68, 1);
 }
 
 .pagination-link:active{
-  opacity: 0.1;
+  color:rgba(68, 68, 68, 0.1);
 }
 
 .pagination-link:focus{
