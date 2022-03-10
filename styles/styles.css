@@ -748,14 +748,16 @@ body {
 .advantages-button:hover::after,
 .contacts-link:hover::after,
 .about-us-link:hover::after,
-.products-slider-more:hover::after {
+.products-slider-more:hover::after,
+.catalog-button:hover::after {
   height: 100%;
 }
 
 .advantages-button:active::after,
 .contacts-link:active::after,
 .about-us-link:active::after,
-.products-slider-more:active::after {
+.products-slider-more:active::after,
+.catalog-button:active::after {
   background-color: #FFCC33;
   height: 100%;
 }
@@ -763,7 +765,8 @@ body {
 .advantages-button:focus::after,
 .contacts-link:focus::after,
 .about-us-link:focus::after,
-.products-slider-more:focus::after {
+.products-slider-more:focus::after,
+.catalog-button:focus::after {
   outline: 2px solid #AF4FFF;
   outline-offset: 10px;
 }
@@ -771,7 +774,8 @@ body {
 .advantages-button:disabled::after,
 .contacts-link:disabled::after,
 .about-us-link:disabled::after,
-.products-slider-more:disabled::after {
+.products-slider-more:disabled::after,
+.catalog-button:disabled::after {
   opacity: 0.3;
 }
 
@@ -1437,12 +1441,60 @@ outline: 1px solid #AF4FFF;
   display: flex;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
-.catalog-control-link {
-  display: block;
+.catalog-control-item{
   width: 30px;
   height: 30px;
+}
+
+.catalog-control-link-up,
+.catalog-control-link-down {
+  position: relative;
+}
+
+.catalog-control-link-up::after{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10px;
+  left:9.5px;
+  width: 11px;
+  height: 10px;
+  background-image: url(../images/icons/scroling1.svg);
+  background-repeat: no-repeat;
+  opacity: 0.2;
+}
+
+.catalog-control-link-down::after{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10px;
+  left:9.5px;
+  width: 11px;
+  height: 10px;
+  background-image: url(../images/icons/scroling1.svg);
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+  opacity: 0.2;
+}
+
+.catalog-control-link-up:hover::after,
+.catalog-control-link-down:hover::after{
+  opacity: 0.5;
+}
+
+.catalog-control-link-up:active::after,
+.catalog-control-link-down:active::after{
+opacity: 1;
+}
+
+.catalog-control-link-up:focus,
+.catalog-control-link-down:focus{
+  outline: 2px solid #AF4FFF;
+  outline-offset: 10px;
 }
 
 .filter-title {
@@ -1619,12 +1671,31 @@ outline: 1px solid #AF4FFF;
   border: 3px solid #E5E5E5;
   padding: 18px 294px;
   cursor: pointer;
+}
 
+.pagination-show-more:hover{
+  border: 3px solid #000000;
+}
+
+.pagination-show-more:active{
+  opacity: 0.3;
+  border: 3px solid #000000;
+}
+
+.pagination-show-more:disabled{
+  opacity: 0.3;
+  border: 3px solid #E5E5E5;
+}
+
+.pagination-show-more:focus{
+outline:  2px solid #AF4FFF;
+outline-offset: 2px;
 }
 
 .pagination-list-wrapper {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .pagination-list {
@@ -1637,13 +1708,12 @@ outline: 1px solid #AF4FFF;
   background-color: #EBEBEB;
   color: #000;
   align-items: center;
-  padding: 16px 9px;
 }
 
 .pagination-previous,
 .pagination-next {
   display: block;
-  padding: 10px 16px;
+  padding: 25px;
 }
 
 .pagination-item:first-child {
@@ -1657,14 +1727,47 @@ outline: 1px solid #AF4FFF;
 .pagination-link {
   font-size: 16px;
   line-height: 20px;
-  text-align: center;
   color: #444444;
+  opacity: 0.3;
   text-decoration: none;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 40px;
   height: 40px;
-  padding: 10px 16px;
 }
+
+.pagination-link:hover{
+  opacity: 1;
+}
+
+.pagination-link:active{
+  opacity: 0.1;
+}
+
+.pagination-link:focus{
+  outline: 2px solid #AF4FFF;
+}
+
+
+.pagination-previous:hover,
+.pagination-next:hover{
+  background-color: #DCDCDC;
+}
+
+.pagination-previous:active,
+.pagination-next:active{
+  background-color: #DCDCDC;
+  opacity: 0.3;
+}
+
+.pagination-previous:focus,
+.pagination-next:focus{
+  background-color: #F0F0F0;
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
 
 .bg-grey {
   background-color: #F0F0F0;
@@ -1699,9 +1802,6 @@ outline: 1px solid #AF4FFF;
 
 .menu-toggle::after {
   content: '';
-  /* position: absolute;
-  right: 0;
-  top: 0; */
   display: block;
   width: 50px;
   height: 50px;
