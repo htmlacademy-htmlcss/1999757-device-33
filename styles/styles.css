@@ -413,10 +413,9 @@ body {
 
 .products-slider-more {
   display: block;
-  padding: 10px 5px;
+  padding: 10px 39px;
   margin-bottom: 50px;
   text-align: left;
-  padding-left: 39px;
   position: relative;
   min-width: 220px;
   max-width: max-content;
@@ -730,8 +729,7 @@ body {
 .advantages-button {
   border: none;
   padding: 0;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding:10px 32px;
   min-width: 160px;
   max-width: max-content;
 }
@@ -1023,13 +1021,11 @@ body {
 }
 
 .about-us-link{
-  padding-left: 22.14px;
-  padding-right: 22.14px;
+  padding:10px 22.14px;
 }
 
 .contacts-link{
-  padding-left: 33.91px;
-  padding-right: 33.91px;
+  padding: 10px 33.91px;
 }
 
 
@@ -1581,8 +1577,7 @@ opacity: 1;
   padding: 0;
   margin: 0;
   border: none;
-  padding-left: 49px;
-  padding-right: 49px;
+  padding:10px 49px;
 }
 
 .catalog-button::after{
@@ -1611,6 +1606,11 @@ opacity: 1;
   border: 0;
   height: 30px;
   margin-right: 197px;
+  border: none;
+}
+
+.select-dropdown:focus{
+  outline: 2px solid #AF4FFF;
 }
 
 .product-card-container {
