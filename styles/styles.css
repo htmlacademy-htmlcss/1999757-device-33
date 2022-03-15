@@ -1517,7 +1517,6 @@ body {
 
 .wrapper-catalog-products-title {
   margin: 0;
-  padding-bottom: 60px;
 }
 
 .catalog-right-column {
@@ -1538,6 +1537,7 @@ body {
   padding: 0;
   border: none;
   position: relative;
+  margin-top: 72px;
   margin-bottom: 35px;
 }
 
