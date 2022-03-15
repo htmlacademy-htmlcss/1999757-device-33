@@ -2113,6 +2113,20 @@ input.is-error+.modal-form-field-error {
   background-color: #fff;
 }
 
+.modal-close:hover{
+  opacity: 0.6;
+}
+.modal-close:active{
+  opacity: 0.3;
+}
+
+.modal-close:focus{
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+
+
 .wrapper-modal-name-email{
   display: grid;
   grid-template-columns: 360px 360px;
@@ -2155,6 +2169,23 @@ margin-bottom: 14px;
   background-position: center;
 }
 
+.button-quantity:hover::after{
+  content: "";
+  position: absolute;
+  top: 36px;
+  left: -133px;
+  display: block;
+  width: 200px;
+  height: 160px;
+  background-color: #000;
+  color: #fff;
+  z-index: 10;
+  background-image: url(../images/icons/arrow-modal.svg);
+  background-size: 14px 6px;
+  background-repeat: no-repeat;
+  background-position: top 50px right;
+}
+
 .input-modal{
   border: none;
   background-color: #F0F0F0;
@@ -2162,6 +2193,25 @@ margin-bottom: 14px;
   font-family: "Rubik", sans-serif;
   font-size: 16px;
   line-height: 20px;
+}
+
+.input-modal:hover,
+.button-reduce:hover,
+.button-increase:hover{
+  background-color:#DCDCDC ;
+}
+
+.input-modal:focus{
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+.input-modal:disabled{
+  opacity: 0.3;
+}
+
+.input-modal.is-error{
+  outline: 2px solid #FF3D3D;
 }
 
 .input-name{
@@ -2178,9 +2228,12 @@ margin-bottom: 14px;
   background-size: 15px 12px;
 }
 
-.error-email{
+.email-span{
   font-size: 14px;
   line-height: 20px;
+}
+
+.error-email{
   color: #FF3D3D;
 }
 
@@ -2195,12 +2248,17 @@ margin-bottom: 14px;
   display: flex;
 }
 
+.modal-form-quantity-input.is-error{
+  outline: 2px solid #FF3D3D;
+}
+
 .button-reduce,
 .button-increase{
   position: relative;
   width: 60px;
   height: 60px;
   border: none;
+  cursor: pointer;
 }
 
 .button-reduce::after,
