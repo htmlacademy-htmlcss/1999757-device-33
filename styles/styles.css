@@ -746,7 +746,8 @@ body {
 .contacts-link:hover::after,
 .about-us-link:hover::after,
 .products-slider-more:hover::after,
-.catalog-button:hover::after {
+.catalog-button:hover::after,
+.modal-button:hover::after{
   height: 100%;
 }
 
@@ -754,7 +755,8 @@ body {
 .contacts-link:active::after,
 .about-us-link:active::after,
 .products-slider-more:active::after,
-.catalog-button:active::after {
+.catalog-button:active::after,
+.modal-button:active::after {
   background-color: #FFCC33;
   height: 100%;
 }
@@ -763,7 +765,8 @@ body {
 .contacts-link:focus::after,
 .about-us-link:focus::after,
 .products-slider-more:focus::after,
-.catalog-button:focus::after {
+.catalog-button:focus::after,
+.modal-button:focus::after {
   outline: 2px solid #AF4FFF;
   outline-offset: 10px;
 }
@@ -772,7 +775,8 @@ body {
 .contacts-link:disabled::after,
 .about-us-link:disabled::after,
 .products-slider-more:disabled::after,
-.catalog-button:disabled::after {
+.catalog-button:disabled::after,
+.modal-button:disabled::after {
   opacity: 0.3;
 }
 
@@ -1643,7 +1647,8 @@ body {
   padding: 10px 49px;
 }
 
-.catalog-button::after {
+.catalog-button::after,
+.modal-button::after{
   content: '';
   position: absolute;
   top: 50%;
@@ -2056,15 +2061,15 @@ color: #7D7D7D;
   opacity: 1;
 }
 
-.modal-form-field-error {
+ .modal-form-field-error {
   display: none;
-}
+} 
 
 input.is-error+.modal-form-field-error {
   display: block;
 }
 
-.modal {
+.modal-container {
   position: fixed;
   top: 0;
   right: 0;
@@ -2076,7 +2081,7 @@ input.is-error+.modal-form-field-error {
   justify-content: center;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.5);
-  display: none;
+  display: flex;
 }
 
 .modal.is-active {
@@ -2089,4 +2094,150 @@ input.is-error+.modal-form-field-error {
   background-color: #fff;
   position: relative;
   z-index: 2;
+  margin: auto;
+  padding: 72px 80px;
+}
+
+.modal-close{
+  position: absolute;
+  padding: 0;
+  top: 84px;
+  right: 80px;
+  border: none;
+  width: 26px;
+  height: 26px;
+  background-image: url("../images/icons/close-modal.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.wrapper-modal-name-email{
+  display: grid;
+  grid-template-columns: 360px 360px;
+  gap:40px;
+  padding-bottom: 42px;
+}
+
+.modal-form-input-field{
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-title{
+  margin: 0;
+  margin-bottom: 42px;
+}
+
+.label-modal{
+font-weight: 700;
+line-height: 20px;
+margin-bottom: 14px;
+}
+
+.label-quantity{
+  position: relative;
+}
+
+.button-quantity{
+  position: absolute;
+  display: block;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #FFE17F;
+  top: -2px;
+  left: 120px;
+  border: none;
+  background-image: url(../images/icons/info.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.input-modal{
+  border: none;
+  background-color: #F0F0F0;
+  padding: 20px;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.input-name{
+  background-image:url(../images/icons/name-modal.svg) ;
+  background-repeat: no-repeat;
+  background-position: center right 20px;
+  background-size: 13px 12px;
+}
+
+.input-email{
+  background-image: url(../images/icons/email-modal.svg);
+  background-repeat: no-repeat;
+  background-position: center right 20px; 
+  background-size: 15px 12px;
+}
+
+.error-email{
+  font-size: 14px;
+  line-height: 20px;
+  color: #FF3D3D;
+}
+
+.wrapper-modal-info-quantity{
+  display: grid;
+  grid-template-columns: 540px 180px;
+  gap: 40px;
+  padding-bottom: 42px;
+}
+
+.modal-form-quantity-input{
+  display: flex;
+}
+
+.button-reduce,
+.button-increase{
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border: none;
+}
+
+.button-reduce::after,
+.button-increase::after{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left:22px;
+  width: 16px;
+  height: 2px;
+  background-color: #000;
+}
+
+.button-increase::before{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 16px;
+  height:2px;
+  top:50%;
+  left: 21px;
+  background-color: #000;
+  transform: rotate(90deg);
+}
+
+.input-quantity{
+  border: none;
+  background-color: #F0F0F0;
+  padding: 20px 24.5px;
+  width: 60px;
+  height: 60px;
+}
+
+.modal-button{
+  margin: 0;
+  padding: 10px 31px;
+  border: 0;
+  background-color: inherit;
 }

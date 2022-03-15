@@ -579,42 +579,65 @@
     </div>
   </footer>
 
-  <div class="modal">
+  <div class="modal-container">
     <div class="modal-content">
-      <h2>title</h2>
-      <button type="button" class="modal-close">Щакрыть</button>
-      <form action="">
-        <div class="modal-form-input-field  modal-form-input-field-name">
-          <label for="">Поле 1</label>
-          <input type="text">
-        </div>
+      <button type="button" class="modal-close">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <section class="modal">
+        <h2 class="title modal-title">Доставка под заказ</h2>
+        <form action="https://echo.htmlacademy.ru/" method="post" class="form-modal">
 
-        <div class="modal-form-input-field  modal-form-input-field-email">
-          <label for="">Поле 2</label>
-          <input type="text" class="is-error">
-          <span class="modal-form-field-error">Забавный у вас адрес</span>
-        </div>
+          <div class="wrapper-modal-name-email">
+            <div class="modal-form-input-field  modal-form-input-field-name">
+              <label for="name-modal" class="label-modal">Ваше имя:</label>
+              <input type="text" id="name-modal" class="input-modal input-name" placeholder="Введите имя" name="name-modal">
+            </div>
 
-        <div class="modal-form-input-field  modal-form-input-field-info">
-          <label for="">Поле 2</label>
-          <textarea name="" id="" rows="1"></textarea>
-        </div>
+            <div class="modal-form-input-field  modal-form-input-field-email">
+              <label for="email-modal" class="label-modal is-error">Ваш e-mail:</label>
+              <input type="email" id="email-modal" class="input-modal input-email" name="email-modal" placeholder="Ваш e-mail"
+                name="email-modal">
+              <span class="error-email">Забавный у вас адрес</span>
+            </div>
+          </div>
 
-        <div class="modal-form-input-field  modal-form-input-field-info">
-          <label for="">Количество</label>
-          <button type="button"><svg width="4" height="12" viewBox="0 0 4 12" fill="none"
+          <div class="wrapper-modal-info-quantity">
+          <div class="modal-form-input-field  modal-form-input-field-info">
+            <label for="modal-info" class="label-modal">Что нужно привезти:</label>
+            <textarea name="modal-info" id="modal-info" rows="1" placeholder="В свободной форме" class="input-modal"></textarea>
+          </div>
+
+          <div class="modal-form-input-field  modal-form-input-field-quantity">
+            <label for="button-quantity" class="label-modal label-quantity">
+              Количество:
+              <button type="button" class="button-quantity" id="button-quantity">
+                <!--  <svg width="4" height="12" viewBox="0 0 4 12" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path d="M3 0H1V2H3V0Z" fill="black" />
               <path d="M3 4H1V12H3V4Z" fill="black" />
-            </svg>
-          </button>
-          <div class="modal-form-quantity-input">
-            <button type="button">-</button>
-            <input type="text">
-            <button type="button">+</button>
+            </svg> -->
+              </button>
+            </label>
+
+            <div class="modal-form-quantity-input">
+              <button type="button" class="button-reduce">
+                <span class="visually-hidden">
+                  Минуc
+                </span>
+              </button>
+              <input type="text" value="1"  name="input-quantity" class="input-quantity" min="1" max="99">
+              <button type="button" class="button-increase">
+                <span class="visually-hidden">Плюс</span>
+              </button>
+            </div>
           </div>
-        </div>
-      </form>
+</div>
+          <button class="modal-button button" type="submit">
+            <span>Отправить</span>
+          </button>
+        </form>
+      </section>
     </div>
   </div>
 
