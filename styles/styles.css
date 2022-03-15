@@ -1517,6 +1517,7 @@ body {
 
 .wrapper-catalog-products-title {
   margin: 0;
+  margin-bottom: 60px;
 }
 
 .catalog-right-column {
@@ -1537,9 +1538,10 @@ body {
   padding: 0;
   border: none;
   position: relative;
-  margin-top: 72px;
   margin-bottom: 35px;
+  padding-top: 12px;
 }
+
 
 .catalog-filter-title {
   font-weight: bold;
@@ -1549,7 +1551,11 @@ body {
   padding-bottom: 20px;
 }
 
-.catalog-filter-title::before {
+.catalog-filter-group{
+  border-top: 2px solid#000;
+}
+
+/* .catalog-filter-title::before {
   content: "";
   display: block;
   width: 200px;
@@ -1558,7 +1564,7 @@ body {
   top: -12px;
   background-color: #000000;
 }
-
+ */
 .catalog-filter-list {
   font-size: 16px;
   line-height: 19px;
