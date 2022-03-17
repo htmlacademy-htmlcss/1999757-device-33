@@ -12,7 +12,7 @@
 
     <nav class="navigation">
       <div class="logo-navigation">
-        <a href="https://htmlacademy.ru/" class="logo-link">
+        <a href="index.html" class="logo-link">
           <img src="images/logo/logo_black.svg" alt="Логотип Интернет-магазина Девайс" class="logo" height="36"
             width="145">
         </a>
@@ -146,73 +146,103 @@
           <h2 class="filter wrapper-catalog-products-title">
             Фильтр:
           </h2>
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">
+          <fieldset class="catalog-filter-group price-filter">
+            <p class="catalog-filter-title price-title">
               Стоимость
-            </legend>
+            </p>
+            <div class="range">
+              <div class="range-scale">
+                <div class="range-bar" style="right: 73px; width: 137px">
+                  <button class="range-toggle toggle-min">
+                    <span class="visually-hidden">Изменить минимальную цену.</span>
+                  </button>
+                  <button class="range-toggle toggle-max">
+                    <span class="visually-hidden">Изменить максимальную цену.</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="range-wrapper-inputs">
+                <label class="catalog-filter-label">
+                  от <input class="range-input" type="number" value="0" name="min-price"> ₽
+                </label>
+                <label class="catalog-filter-label">
+                  до <input class="range-input" type="number" value="5000" name="max-price" style="width: 37px"> ₽
+                </label>
+              </div>
+            </div>
           </fieldset>
 
           <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">
+            <p class="catalog-filter-title">
               Цвет
-            </legend>
+            </p>
 
             <ul class="catalog-filter-list">
+
               <li class="catalog-filter-item">
-                <label class="control" for="black">
-                  Черный
+                <label class="control">
+                  <input type="checkbox" class="control-input visually-hidden" name="black" checked>
+                  <span class="control-mark"></span>
+                  <span class="control-label"> Черный </span>
                 </label>
-                <input type="checkbox" class="control-input" name="black" id="black" checked>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control" for="white">
-                  Белый
-                </label>
-                <input type="checkbox" class="control-input" name="white" id="white" checked>
               </li>
 
               <li class="catalog-filter-item">
-                <label class="control" for="blue">
-                  Синий
+                <label class="control">
+                  <input type="checkbox" class="control-input visually-hidden" name="white" checked>
+                  <span class="control-mark"></span>
+                  <span class="control-label"> Белый</span>
                 </label>
-                <input type="checkbox" class="control-input" name="blue" id="blue">
               </li>
 
               <li class="catalog-filter-item">
-                <label class="control" for="red">
-                  Красный
+                <label class="control">
+                  <input type="checkbox" class="control-input visually-hidden" name="blue">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Синий</span>
                 </label>
-                <input type="checkbox" class="control-input" name="red" id="red">
               </li>
 
               <li class="catalog-filter-item">
-                <label class="control" for="pink">
-                  Розовый
+                <label class="control">
+                  <input type="checkbox" class="control-input visually-hidden" name="red">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Красный</span>
                 </label>
-                <input type="checkbox" class="control-input" name="pink" id="pink">
+              </li>
+
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input type="checkbox" class="control-input visually-hidden" name="pink">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Розовый</span>
+                </label>
               </li>
             </ul>
           </fieldset>
 
 
           <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">
+            <p class="catalog-filter-title">
               Bluetooth
-            </legend>
+            </p>
 
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
-                <label class="control" for="thereare">
-                  Есть
+                <label class="control">
+                  <input type="radio" class="control-input visually-hidden" name="product-group" value="there-are" checked>
+                  <span class="control-mark"></span>
+                  <span class="control-label">Есть</span>
                 </label>
-                <input type="radio" class="control-input" name="product-group" id="thereare" value="there-are" checked>
               </li>
 
               <li class="catalog-filter-item">
-                <label class="control" for="no">
-                  Нет
+                <label class="control">
+                  <input type="radio" class="control-input visually-hidden" name="product-group" value="no">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Нет</span>
                 </label>
-                <input type="radio" class="control-input" name="product-group" id="no" value="no">
               </li>
             </ul>
           </fieldset>
@@ -227,12 +257,13 @@
             <h2 class="filter-title filter">
               Сортировка:
             </h2>
-            <select class="select-dropdown">
-              <option value="popular">Популярные</option>
-              <option value="cheap">Самые дешевые</option>
-              <option value="dear">Самые дорогие</option>
-            </select>
-
+            <div class="select">
+              <select class="select-dropdown" aria-label="Сортировка">
+                <option value="popular">Популярные</option>
+                <option value="cheap">Самые дешевые</option>
+                <option value="dear">Самые дорогие</option>
+              </select>
+            </div>
             <ul class="catalog-control-list">
               <li class="catalog-control-item">
                 <a class="catalog-control-link-up" href="#">
@@ -253,58 +284,66 @@
           <div class="product-card-container">
             <ul class="product-card-list">
               <li class="product-card-item">
-                <img src="images/catalog_monopods/catalog_1.png" alt="Любительская
+                <a class="product-card-link" href="#">
+                  <img src="images/catalog_monopods/catalog_1.png" alt="Любительская
 селфи-палка" class="product-card-img" width="360" height="380">
-                <h3 class="product-card-title">
-                  Любительская селфи-палка
-                </h3>
-                <b class="product-card-price">
-                  500 ₽
-                </b>
+                  <h3 class="product-card-title">
+                    Любительская <br> селфи-палка
+                  </h3>
+                  <b class="product-card-price">
+                    500 ₽
+                  </b>
+                </a>
                 <a href="#" class="product-card-all link">
-                  Подробнее
+                  <span>Подробнее</span>
                 </a>
               </li>
 
               <li class="product-card-item">
-                <img src="images/catalog_monopods/catalog_2.png" alt="Профессиональная селфи-палка"
-                  class="product-card-img" width="360" height="380">
-                <h3 class="product-card-title">
-                  Профессиональная селфи-палка
-                </h3>
-                <b class="product-card-price">
-                  1 500 ₽
-                </b>
+                <a class="product-card-link" href="#">
+                  <img src="images/catalog_monopods/catalog_2.png" alt="Профессиональная селфи-палка"
+                    class="product-card-img" width="360" height="380">
+                  <h3 class="product-card-title">
+                    Профессиональная селфи-палка
+                  </h3>
+                  <b class="product-card-price">
+                    1 500 ₽
+                  </b>
+                </a>
                 <a href="#" class="product-card-all link">
-                  Подробнее
+                  <span> Подробнее</span>
                 </a>
               </li>
 
               <li class="product-card-item">
-                <img src="images/catalog_monopods/catalog_3.png" alt="Непотопляемая
+                <a class="product-card-link" href="#">
+                  <img src="images/catalog_monopods/catalog_3.png" alt="Непотопляемая
   селфи-палка" class="product-card-img" width="360" height="380">
-                <h3 class="product-card-title">
-                  Непотопляемая селфи-палка
-                </h3>
-                <b class="product-card-price">
-                  2 500 ₽
-                </b>
+                  <h3 class="product-card-title">
+                    Непотопляемая селфи-палка
+                  </h3>
+                  <b class="product-card-price">
+                    2 500 ₽
+                  </b>
+                </a>
                 <a href="#" class="product-card-all link">
-                  Подробнее
+                  <span> Подробнее</span>
                 </a>
               </li>
 
               <li class="product-card-item">
-                <img src="images/catalog_monopods/catalog_4.png" alt="Селфи-палка «Следуй за мной»"
-                  class="product-card-img" width="360" height="380">
-                <h3 class="product-card-title">
-                  Селфи-палка «Следуй за мной»
-                </h3>
-                <b class="product-card-price">
-                  1 500 ₽
-                </b>
+                <a class="product-card-link" href="#">
+                  <img src="images/catalog_monopods/catalog_4.png" alt="Селфи-палка «Следуй за мной»"
+                    class="product-card-img" width="360" height="380">
+                  <h3 class="product-card-title">
+                    Селфи-палка «Следуй за мной»
+                  </h3>
+                  <b class="product-card-price">
+                    1 500 ₽
+                  </b>
+                </a>
                 <a href="#" class="product-card-all link">
-                  Подробнее
+                  <span> Подробнее</span>
                 </a>
               </li>
             </ul>
@@ -412,7 +451,7 @@
 
       <section class="footer-phone-number">
         <address class="footer-phone-address ">
-          Тел.: <a class="footer-phone-link " href="tel:78128121212 ">+7 (812) 812-12-12</a>
+           <a class="footer-phone-link " href="tel:78128121212 ">Тел.:+7 (812) 812-12-12</a>
         </address>
       </section>
 
@@ -472,7 +511,7 @@
       </div>
     </div>
   </footer>
-  <script src="/js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

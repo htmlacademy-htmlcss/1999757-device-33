@@ -19,4 +19,19 @@ document.addEventListener("DOMContentLoaded", function (event) {
   modalClose.addEventListener("click", () => {
     modal.classList.remove("is-active");
   });
+
+  const openModalBtn = document.querySelector(".button-delivery");
+  const formModal = document.querySelector(".modal-container");
+
+  if (openModalBtn) {
+    openModalBtn.addEventListener("click", () => {
+      formModal.classList.remove("is-close");
+    });
+
+    const closeModalBtn = document.querySelector(".modal-close");
+
+    closeModalBtn.addEventListener("click", () => {
+      formModal.classList.add("is-close");
+    });
+  }
 });
