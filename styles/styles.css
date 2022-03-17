@@ -2150,12 +2150,13 @@ input.is-error+.modal-form-field-error {
   z-index: 2;
   margin: auto;
   padding: 72px 70px;
+  padding-bottom: 55px;
 }
 
 .modal-close {
   position: absolute;
   padding: 0;
-  top: 90px;
+  top: 80px;
   right: 70px;
   border: none;
   width: 26px;
@@ -2261,6 +2262,10 @@ input.is-error+.modal-form-field-error {
   font-family: "Rubik", sans-serif;
   font-size: 16px;
   line-height: 20px;
+}
+
+.textarea-modal{
+  resize: none;
 }
 
 .input-modal:hover,
