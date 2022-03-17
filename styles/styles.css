@@ -279,7 +279,6 @@ body {
   background-repeat: no-repeat;
   background-size: 16px 14px;
   background-position: 17px center;
-  position: relative;
 }
 
 .basket-span {
@@ -2150,13 +2149,13 @@ input.is-error+.modal-form-field-error {
   position: relative;
   z-index: 2;
   margin: auto;
-  padding: 52px 70px;
+  padding: 72px 70px;
 }
 
 .modal-close {
   position: absolute;
   padding: 0;
-  top: 66px;
+  top: 90px;
   right: 70px;
   border: none;
   width: 26px;
@@ -2399,7 +2398,7 @@ input.is-error+.modal-form-field-error {
 .popover-content::before{
 content: "";
 position: absolute;
-top:-7px;
+top:-6px;
 right: 50%;
 display: block;
 width: 14px;
